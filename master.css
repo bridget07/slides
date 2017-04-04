@@ -1,0 +1,52 @@
+body {
+    /*height: 100vh;*/
+    overflow: hidden;
+    background: black;
+}
+.gao-list {
+    position: absolute;
+    display: inline-block;
+    bottom: 18%;
+    /*left: 10%;*/
+    /*由 JS 来改变左边距*/
+    transform: translateX(13rem);
+    width: 150rem;
+    transition: transform 1s;
+}
+.gao-item {
+    display: inline-block;
+}
+.gao-item.gao-highlight img {
+    width: 32rem;
+    height: 22rem;
+}
+img {
+    transition: width 1s, height 1s;
+}
+.gao-item img {
+    width: 13rem;
+    height: 10rem;
+    -webkit-box-reflect: below 0 -webkit-linear-gradient(top,rgba(250,250,250,0),rgba(250,250,250,.0) 30%,rgba(250,250,250,0.45));
+    box-reflect: below 0 -webkit-linear-gradient(top,rgba(250,250,250,0),rgba(250,250,250,.0) 30%,rgba(250,250,250,0.45));
+}
+span {
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: #808080;
+    padding: 0.8rem 0.5rem;
+    text-align: center;
+    opacity: 0.3;
+    bottom: 6%;
+}
+.prev {
+    left: 10%;
+}
+.next {
+    right: 10%;
+}
+
+span:hover {
+    opacity: 0.5;
+}
